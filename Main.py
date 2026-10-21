@@ -1,4 +1,4 @@
-# Create an Intramural score tracker
+# Create an Intramural score trackerD
 
 # Each team entry is a list that includes
 #   - Name
@@ -8,9 +8,24 @@
 #   - Ties
 #   - Goals For
 #   - Goals Against
-
+print ("welcome to the Intramural Score Tracker!")
 # You will ask how many teams are playing.
+print("how many teams are playing?")
+numTeams=int(input())
+while (numTeams<2):
+    print("you need at least 2 teams for a competition try again")
+    numTeams=int(input())
+
+print(f"got it. {numTeams} teams. now let's set those up.")
 # Loop that many times, create a team and set all scores to 0, then append it to your list of teams
+teams=[]
+for i in range(numTeams):
+    team=[]
+    print(f"what's the team name for team #{i+1}?")
+    team.append(input())
+    team.append(0 for i in range(6))
+    print(team)
+    teams.append(team)
 # Start an infinite loop for main menu
 #   1) Add score
 #   2) See Team stats
