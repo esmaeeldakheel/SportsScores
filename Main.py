@@ -22,16 +22,22 @@ teams=[]
 for i in range(numTeams):
     team=[]
     print(f"what's the team name for team #{i+1}?")
-    team.append(input())
-    team.append(0 for i in range(6))
+    team=[input(),0,0,0,0,0,0]
+
     print(team)
     teams.append(team)
+
+choice=0
 # Start an infinite loop for main menu
+# while
 #   1) Add score
 #   2) See Team stats
 #   3) See Overall Standings
 #   4) Quit
-
+while choice!=4:
+    print("make a selection")
+    print("1. add score")
+    choice=int(input))
 #   1) Enter team 1, team 2, goals for team 1, goals for team 2
 #       - Find the teams, update the games played, add the goals for and against, and decide if it's a win, lose or tie
 
